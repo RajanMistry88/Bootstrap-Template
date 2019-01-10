@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Mvc Tutorial Application</title>
+    <link rel="shortcut icon" href="image/Boostrap.svg" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- <link rel="stylesheet" href="script/bootstrap.min.css" /> -->
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="about.html" class="navbar-brand">MVC Tutorial</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav" style="float:right">
+                    <li><a href="Contact.html" class="navbar-brand"><small>Contact</small></a></li>
+                    <li><a href="Home.html" class="navbar-brand"><small>Home</small></a></li>
+                    <li><a href="About.html" class="navbar-brand"><small>About</small></a></li>
+                    <li><a href="Profile.html" class="navbar-brand"><small>Profile</small></a></li>
+                    <li><a href="ChangePassword.html" class="navbar-brand"><small>Change Password</small></a></li>
+                    <li><a href="DeleteAccount.html" class="navbar-brand" onclick="javascript:return confirm('Are you sure you want to Delete your Account? It will Delete Your Recode From the DataBase.')">
+                            <small>Delete Account</small>
+                        </a> </li>
+                    <li><a href="Login.html" class="navbar-brand"><small>Logout</small></a></li>
+                    <li style="color:white">Welcome, UserName</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container body-content">
+        <br><br><br>
+
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h3 style="text-align:center"><b>Profile Module</b></h3>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 style="text-align:center"><b>Profile</b></h4>
+                    </div>
+                    <div class="panel-body">
+                        <form name='profileForm'>
+                            <p>
+                                <label>User Name</label>
+                                <input type="text" Name='UserName' placeholder="Enter Your UserName" class="form-control">
+                            </p>
+                            <div class="text-danger"> UserName is Required.</div>
+
+
+                            <p>
+                                <label>EmailAddress</label>
+                                <input type="email" Name='EmailAddress' placeholder="Enter Your Email Address" class="form-control">
+                            </p>
+                            <div class="text-danger"> EmailAddress is Required.</div>
+
+                            <p>
+                                <label>Mobile No</label>
+                                <input type="tel" Name='MobileNo' placeholder="Enter Your Mobile No" class="form-control">
+                            </p>
+                            <div class="text-danger"> Mobile No is Required.</div>
+
+                            <p>
+                                <label>Address</label>
+                                <textarea type="text" Name='Address' placeholder="Enter Your Address" class="form-control"></textarea>
+                            </p>
+                            <div class="text-danger"> Address is Required.</div>
+
+                            <button type="Submit" class="btn">Update</button><br/>
+                            <!-- here i m adding Font Color Red To Display Error Message -->
+                            <font class="text-success"> Profile update Successfull</font><br/>
+                            <font class="text-danger">Server Error</font>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-8">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h4>Profile Component</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>
+                            Profile page Content
+                        </p>
+
+                        <hr>
+                        <a style="float:left" href="#">Design Used</a> <a style="float:right" href="#">Application Info
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Mvc Tutorial Application</title>
+    <link rel="shortcut icon" href="image/Boostrap.svg" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- <link rel="stylesheet" href="script/bootstrap.min.css" /> -->
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="about.html" class="navbar-brand">MVC Tutorial</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav" style="float:right">
+                    <li><a href="Contact.html" class="navbar-brand"><small>Contact</small></a></li>
+                    <li><a href="Home.html" class="navbar-brand"><small>Home</small></a></li>
+                    <li><a href="About.html" class="navbar-brand"><small>About</small></a></li>
+                    <li><a href="Profile.html" class="navbar-brand"><small>Profile</small></a></li>
+                    <li><a href="ChangePassword.html" class="navbar-brand"><small>Change Password</small></a></li>
+                    <li><a href="DeleteAccount.html" class="navbar-brand" onclick="javascript:return confirm('Are you sure you want to Delete your Account? It will Delete Your Recode From the DataBase.')">
+                            <small>Delete Account</small>
+                        </a> </li>
+                    <li><a href="Login.html" class="navbar-brand"><small>Logout</small></a></li>
+
+                    <li style="color:white">Welcome, UserName</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container body-content">
+
+        <div class="jumbotron">
+            <h2>Information About Application</h2>
+        </div>
+
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3>Mvc Tutorial Application</h3>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">Profile Module</div>
+                            <div class="panel-body">
+                                Profile Module is Display Specific User Information and it can Update his/her Profile.
+                                <a class="btn btn-default" href="Profile.html">Visit Page &raquo;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">Change Password Module</div>
+                            <div class="panel-body">
+                                Change Password Module is allow User to modify his/her existing Password.
+                                <a class="btn btn-default" href="ChangePassword.html">Visit Page &raquo;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">Delete Account Module</div>
+                            <div class="panel-body">
+                                Delete Account Module is allow User to Delete his/her Account
+                                <a class="btn btn-default" href="#">Visit Page &raquo;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">Logout Module</div>
+                            <div class="panel-body">
+                                Logout Button is Clear User Session and Redirect to Login Page.
+                                <a class="btn btn-default" href="#">Visit Page &raquo;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">Listing Module</div>
+                            <div class="panel-body">
+                                Logout Button is Clear User Session and Redirect to Login Page.
+                                <a class="btn btn-default" href="#" onclick="javascript:return alert('Other Module will Be Updated Soon Stay Connected. :)')">Coming
+                                    Soon &raquo;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">Other Module</div>
+                            <div class="panel-body">
+                                Partial view, DropDownList from DB, JQuery Exeternal Alert Message
+                                <a class="btn btn-default" href="#" onclick="javascript:return alert('Radio Button, Check Box, Image Uploading, Store Procedure CRUD Operation, View, and More')">More
+                                    &raquo;
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Mvc Tutorial <a href="https://github.com/RajanMistry88/Optical-Character-Recognition-OCR-Using-ASP.MVC"
+                    style="float:right;">Download Source Code from <b>GitHub</b></a></p>
+
+        </footer>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
